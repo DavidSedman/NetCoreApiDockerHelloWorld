@@ -20,6 +20,9 @@ To build and run in docker use:
 docker build -t netcoreapidockerhelloworld .
 docker run -it --rm -p 8000:80 netcoreapidockerhelloworld
 ```
+
+To test use the following url: http://localhost:8000/api/values
+
 ## A little help from some friends
 * [medium.com](https://medium.com/trafi-tech-beat/running-net-core-on-docker-c438889eb5a)
 * [.NET SDK](https://www.microsoft.com/net/learn/get-started/macos#macosx)
