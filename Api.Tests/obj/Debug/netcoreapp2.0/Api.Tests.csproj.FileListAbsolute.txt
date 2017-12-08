@@ -1,0 +1,3 @@
+/Users/davidsedman/Src/NetCoreApiDockerHelloWorld/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.csproj.CoreCompileInputs.cache
+/Users/davidsedman/Src/NetCoreApiDockerHelloWorld/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.AssemblyInfoInputs.cache
+/Users/davidsedman/Src/NetCoreApiDockerHelloWorld/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.AssemblyInfo.cs
