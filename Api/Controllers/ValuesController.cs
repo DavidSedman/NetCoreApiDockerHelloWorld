@@ -26,7 +26,7 @@ namespace NetCoreApiDockerHelloWorld.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            var result = $"Hello, Number {id}!";
+            var result = $"Hello, Number !";//{id}
             return result;
         }
     }
