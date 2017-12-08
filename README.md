@@ -31,3 +31,4 @@ To test use the following url: http://localhost:8000/api/values
 * [docker docs - dotnetcore introduction](https://docs.docker.com/engine/examples/dotnetcore/#introduction)
 * [README-Template.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [NET Core Testing](https://docs.microsoft.com/en-us/aspnet/core/testing/integration-testing)
+* [NET Core API Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio-code%2Cvisual-studio#tabpanel_9fKY8SstIr_visual-studio-code)
