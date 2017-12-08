@@ -6,17 +6,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NetCoreApiDockerHelloWorld.Controllers
 {
+    ///<summary>
+    /// Values Controller
+    ///</summary>
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        // GET api/values
+        ///<summary>
+        /// Get All
+        ///</summary>
+        /// <param name="id"></param>
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "Hello", "World" };
-        }
+        public IEnumerable<string> Get() => new string[] { "Hello", "World" };
 
-        // GET api/values/5
+        ///<summary>
+        /// Get By Id
+        ///</summary>
+        /// <param name="id"></param>
         [HttpGet("{id}")]
         public string Get(int id)
         {
