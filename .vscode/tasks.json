@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/NetCoreApiDockerHelloWorld.csproj"
+                "${workspaceFolder}/Api/NetCoreApiDockerHelloWorld.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
