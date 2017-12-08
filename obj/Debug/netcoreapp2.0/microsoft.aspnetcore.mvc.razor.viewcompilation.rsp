@@ -1,0 +1,5 @@
+/Users/davidsedman/Src/NetCoreApiDockerHelloWorld
+--output-path=obj/Debug/netcoreapp2.0/
+--application-name=NetCoreApiDockerHelloWorld
+--content-root=/Users/davidsedman/Src/NetCoreApiDockerHelloWorld
+--file=
