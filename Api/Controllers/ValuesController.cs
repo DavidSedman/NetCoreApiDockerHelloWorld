@@ -17,7 +17,7 @@ namespace NetCoreApiDockerHelloWorld.Controllers
         ///</summary>
         /// <param name="id"></param>
         [HttpGet]
-        public IEnumerable<string> Get() => new string[] { "Hello", "World Bad Boy" };
+        public IEnumerable<string> Get() => new string[] { "Hello", "World" };
 
         ///<summary>
         /// Get By Id
