@@ -10,13 +10,25 @@ using Microsoft.Extensions.Logging;
 
 namespace NetCoreApiDockerHelloWorld
 {
+    /// <summary>
+    /// Program Class
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Main Method
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
         }
 
+        /// <summary>
+        /// Build Web Host Method
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()

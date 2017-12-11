@@ -16,15 +16,19 @@ namespace NetCoreApiDockerHelloWorld.Controllers
         
         private readonly ILogger _logger;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="logger"></param>
         public ValuesController(ILogger<ValuesController> logger)
         {
             _logger = logger;
         }
 
-        ///<summary>
+        /// <summary>
         /// Get All
-        ///</summary>
-        /// <param name="id"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<string> Get()
         {
@@ -34,10 +38,11 @@ namespace NetCoreApiDockerHelloWorld.Controllers
             return result;
         } 
 
-        ///<summary>
+        /// <summary>
         /// Get By Id
-        ///</summary>
+        /// </summary>
         /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public string Get(int id)
         {
