@@ -1,15 +1,19 @@
+using Moq;
 using Xunit;
 using NetCoreApiDockerHelloWorld.Controllers;
+using Microsoft.Extensions.Logging;
 
 namespace Api.Tests.Controllers
 {
     public class ValuesControllerTests 
     {
         private readonly ValuesController _classToTest;
-
+        private readonly ILogger<ValuesController> _logger;
         public ValuesControllerTests()
         {
-            _classToTest = new ValuesController();
+            var mock = new Mock<ILogger<ValuesController>>();
+            _logger = mock.Object;
+            _classToTest = new ValuesController(_logger);
         }
 
         [Fact]
@@ -27,6 +31,16 @@ namespace Api.Tests.Controllers
 
             Assert.NotNull(result);
             Assert.True(result == "Hello, Number 1!"); 
+        }
+
+        [Fact]
+        public void GetIdReturnsNotFoundValues()
+        {
+            var result = _classToTest.Get(0);
+
+            Assert.NotNull(result);
+            
+            Assert.True(result == "GetById(0) NOT FOUND"); 
         }
     }
 }

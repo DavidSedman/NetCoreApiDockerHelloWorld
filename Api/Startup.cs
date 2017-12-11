@@ -27,7 +27,7 @@ namespace NetCoreApiDockerHelloWorld
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info 

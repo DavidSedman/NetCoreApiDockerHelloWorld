@@ -48,5 +48,18 @@ namespace Api.IntegrationTests.Controllers
             // Assert
             Assert.True(result == "Hello, Number 1!");
         }
+
+        [Fact]
+        public async Task GetIdReturnNotFound()
+        {
+            // Act
+            var response = await _client.GetAsync("api/values/0");
+            response.EnsureSuccessStatusCode();
+
+            var result = await response.Content.ReadAsStringAsync();
+
+            // Assert
+            Assert.True(result == "GetById(0) NOT FOUND");
+        }
     }
 }
